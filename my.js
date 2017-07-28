@@ -5,6 +5,9 @@ var mobiles = ['window','moto'];
 for(var i=0 ; i<mobiles.length;i++)
 {
     console.log(mobiles[i]);
+
+
+    
 }
 
 var x;

@@ -1,0 +1,1 @@
+let mym : number = 10;

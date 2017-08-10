@@ -1,0 +1,18 @@
+<div class="container"> 
+  <div class="row" > 
+    <div class="col-md-12">       
+      <app-in-component  [output]=buttonData> 
+        
+      </app-in-component>
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-md-12">
+      <app-out-component (callFunReturn)="myData($event)">
+       
+      </app-out-component>
+    </div>
+  </div>
+</div>
+
+ {{buttonData}}

@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { HiComponent } from './hi.component';
 import { CodekulComponent } from './codekul/codekul.component';
+import { Ng2TableModule } from 'ng2-table/ng2-table';
+import { TableComponentComponent } from './table-component/table-component.component';
+
 
 
 @NgModule({
@@ -12,7 +15,8 @@ import { CodekulComponent } from './codekul/codekul.component';
     AppComponent,
     HelloComponent,
     HiComponent,
-    CodekulComponent
+    CodekulComponent,
+    TableComponentComponent
   ],
   imports: [
     BrowserModule

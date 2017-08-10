@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Ng2TableModule } from 'ng2-table/ng2-table';
 
 import { AppComponent } from './app.component';
 import { Component1Component } from './component1/component1.component';
@@ -12,6 +13,7 @@ import { OutComponentComponent } from './main-component/out-component.component'
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { AttributeDirComponent } from './attribute-dir/attribute-dir.component';
+import { TableComponentComponent } from './table-component/table-component.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { AttributeDirComponent } from './attribute-dir/attribute-dir.component';
     OutComponentComponent,
     ContentProjectionComponent,
     LocalRefsComponent,
-    AttributeDirComponent
+    AttributeDirComponent,
+    TableComponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    Ng2TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

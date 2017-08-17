@@ -29,4 +29,7 @@ callContentChild()
   this.nm =  this.hello.nativeElement;
 }
 
+  title = 'Tour of Heroes';
+  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+  myHero = this.heroes[0];
 }

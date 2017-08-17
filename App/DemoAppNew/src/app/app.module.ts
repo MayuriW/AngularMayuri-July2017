@@ -14,6 +14,16 @@ import { ContentProjectionComponent } from './content-projection/content-project
 import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { AttributeDirComponent } from './attribute-dir/attribute-dir.component';
 import { TableComponentComponent } from './table-component/table-component.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { DropdownDirective } from './dropdown/dropdown.directive';
+import { TooltipDirective } from './tooltip.directive';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { CustStruDirDirective } from './cust-stru-dir.directive';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavbarcompComponent } from './navbarcomp/navbarcomp.component';
+import { Label1cmpComponent } from './label1cmp/label1cmp.component';
+import { DashboardTableComponent } from './dashboard-table/dashboard-table.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +38,16 @@ import { TableComponentComponent } from './table-component/table-component.compo
     ContentProjectionComponent,
     LocalRefsComponent,
     AttributeDirComponent,
-    TableComponentComponent
+    TableComponentComponent,
+    DropdownComponent,
+    DropdownDirective,
+    TooltipDirective,
+    SideBarComponent,
+    CustStruDirDirective,
+    DashboardComponent,
+    NavbarcompComponent,
+    Label1cmpComponent,
+    DashboardTableComponent
   ],
   imports: [
     BrowserModule,

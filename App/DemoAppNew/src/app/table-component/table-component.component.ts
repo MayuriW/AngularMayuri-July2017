@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {NgClass, NgIf} from '@angular/common';
 
 import {NG_TABLE_DIRECTIVES} from 'ng2-table/ng2-table';
-import { TableData } from "../table-data";
+//import { TableData } from "../table-data";
+import { DashBoardData } from "../DashBoardData";
+
+
 
 // webpack html imports
 @Component({  
@@ -14,7 +17,7 @@ import { TableData } from "../table-data";
 })
 export class TableComponentComponent implements OnInit {
   public rows:Array<any> = [];
-  public columns:Array<any> = [
+  /*public columns:Array<any> = [
     {title: 'Name', name: 'name', filtering: {filterString: '', placeholder: 'Filter by name'}},
     {
       title: 'Position',
@@ -26,6 +29,18 @@ export class TableComponentComponent implements OnInit {
     {title: 'Extn.', name: 'ext', sort: '', filtering: {filterString: '', placeholder: 'Filter by extn.'}},
     {title: 'Start date', className: 'text-warning', name: 'startDate'},
     {title: 'Salary ($)', name: 'salary'}
+  ];*/
+
+  public columns:Array<any> = [
+    {title: '#', name: '#'},
+    {
+      title: 'Header',
+      name: 'Header'
+    },
+    {title: 'Header1',name: 'Header1'},
+    {title: 'Header2', name: 'Header2'},
+    {title: 'Header3', name: 'Header3'},
+    {title: 'Header4', name: 'Header4'}
   ];
   public page:number = 1;
   public itemsPerPage:number = 10;
@@ -40,7 +55,8 @@ export class TableComponentComponent implements OnInit {
     className: ['table-striped', 'table-bordered']
   };
 
-  private data:Array<any> = TableData;
+  private data:Array<any> = DashBoardData;
+  //TableData;
 
   public constructor() {
     this.length = this.data.length;

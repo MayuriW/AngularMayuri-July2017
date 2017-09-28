@@ -1,0 +1,19 @@
+struts 2.0 
+xml parsing 
+
+struts flow
+validation in struts
+
+spring flow 
+controller vs restcontroller 
+dependecy injection vs factory design pattern
+
+soap vs rest difference in java
+annotations for web call
+maven and ant tool
+ws-import tool
+@webMethod annotation 
+
+thread dump how to take and what is it?
+
+

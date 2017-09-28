@@ -1,0 +1,8 @@
+User Name  <input #name type="text"/>
+Password  <input #pass type="password" />
+<input type="button" value="Submit" class="btn btn-success"
+ (click)='Login(name.value,pass.value)'/> 
+
+<a [routerLink]="['/forget']">forgot-password</a>
+
+

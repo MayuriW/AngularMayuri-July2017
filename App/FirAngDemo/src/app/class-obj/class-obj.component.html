@@ -1,0 +1,11 @@
+<p>
+  {{obj.name}}
+  {{obj.id}}
+</p>
+
+<!--ngIf -->
+<h1 *ngIf= "!isTrue then FirstTemplate else SecondTemplate">{{name}}</h1>
+
+<ng-template #FirstTemplate>first Template </ng-template>
+
+<ng-template #SecondTemplate>second template </ng-template>

@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 ng-style="text-align:center">
+    Welcome to my Courses    
+  </h1>
+  <ul class="ul">
+    <li *ngFor="let myCourse of myCourses">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 green">
+         {{myCourse}}
+    </div>
+  </div>
+    </li>
+  </ul>
+</div>

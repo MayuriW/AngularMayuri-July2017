@@ -1,0 +1,20 @@
+<div class="container main">
+  <div class="row">
+    <div class="col">
+      <h1>Item List</h1>
+      <input [(ngModel)]="newItem" placeholder="Add Item here"/>
+      <input type="button" value="Add" (click)=addItem()/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li *ngFor="let item of Items" >
+         {{item}}
+       <span (click)=RemoveItem()>x</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
